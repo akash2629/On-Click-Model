@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+}
+.openModal{
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    border:0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
+    
+}
+.popup{
+    
+    width: 400px;
+    
+     padding: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    /* background-color: #90EE90; */
+    background-color: #fff;
+    border-radius: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    transition:transform 0.35s;
+    visibility: hidden;
+
+}
+.closeModelButton{
+    background: green;
+    color: #fff;
+    font-size: 20px;
+   
+    border:0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
+}
+p{
+    margin-top: 5px;
+}
+
+.popup_open{
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
